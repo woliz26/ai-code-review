@@ -1,4 +1,4 @@
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+import fetch from 'node-fetch';
 (async () => {
   try {
     const response = await fetch('http://localhost:3002/review', {
